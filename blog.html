@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare | Blog</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">&#9877; MediCare</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Blog</span></div>
+    <h1>Health & Wellness Blog</h1>
+    <p>Expert insights, tips and guidance from our medical team.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Category filters -->
+    <div class="blog-filters">
+      <button class="cat-btn active" data-cat="All">All</button>
+      <button class="cat-btn" data-cat="Wellness">Wellness</button>
+      <button class="cat-btn" data-cat="Nutrition">Nutrition</button>
+      <button class="cat-btn" data-cat="Mental Health">Mental Health</button>
+      <button class="cat-btn" data-cat="Preventive Care">Preventive Care</button>
+    </div>
+
+    <!-- Blog posts loaded from API -->
+    <div class="blog-grid" id="blogGrid">
+      <p class="loading-text">Loading articles...</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <h3>Stay Informed</h3>
+    <p>Subscribe for weekly health tips from our specialists.</p>
+    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+    <p id="nl-msg" style="margin-top:12px;color:#1ABC9C;display:none;">Thanks for subscribing!</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><div class="logo" style="color:#fff;font-size:1.3rem;margin-bottom:12px;">&#9877; MediCare</div><p>Professional healthcare services built on trust, expertise, and compassion.</p></div>
+    <div><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h5>Services</h5><ul><li><a href="services.html">General Consultation</a></li><li><a href="services.html">Diagnostics</a></li><li><a href="services.html">Rehabilitation</a></li><li><a href="services.html">Mental Health</a></li></ul></div>
+    <div><h5>Contact</h5><ul class="footer-contact"><li>📍 123 Health Avenue, Medical District</li><li>📞 +1 (800) 555-0199</li><li>✉️ hello@medicare.health</li><li>🕐 Mon–Fri: 8am – 6pm</li></ul></div>
+  </div>
+  <div class="footer-bottom container"><span>&copy; 2024 MediCare. All rights reserved.</span></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>
